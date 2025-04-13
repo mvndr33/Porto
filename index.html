@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mavandre | Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="noise-overlay"></div>
+
+  <div class="container">
+    <header class="header">
+      <div class="nav-container">
+        <div class="logo">MAVANDRE.</div>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="intro-text">
+          <h1 class="split-text">
+            <span class="word">Hello,</span>
+            <span class="word">I'm</span>
+            <span class="word">Mavandre</span>
+          </h1>
+          <h2 class="profession split-text">
+            <span class="word">Web</span>
+            <span class="word">Developer</span>
+          </h2>
+          <div class="hero-description">
+            <p class="typing-text">I build engaging digital experiences with code and creativity.</p>
+          </div>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+            <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="frames-container" id="stop-motion-hero">
+            <!-- These frames will be populated by JS for the stop motion effect -->
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-padding" id="about">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="bio-text">Hello, I'm Mavandre WEB DEV. I'm passionate about creating innovative digital solutions that combine beautiful design with efficient functionality. With a strong foundation in web development and a keen eye for detail, I bring ideas to life through clean, maintainable code.</p>
+            <p>I specialize in building responsive websites and web applications that deliver exceptional user experiences across all devices.</p>
+            <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or finding inspiration in art and design.</p>
+          </div>
+          <div class="about-image">
+            <div class="frames-container" id="stop-motion-about">
+              <!-- These frames will be populated by JS for the stop motion effect -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section-padding" id="skills">
+        <div class="section-header">
+          <h2 class="section-title">My Skills</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <ul class="skill-list">
+              <li class="skill-item" data-skill="HTML5">
+                <span class="skill-name">HTML5</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+              </li>
+              <li class="skill-item" data-skill="CSS3">
+                <span class="skill-name">CSS3</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+              </li>
+              <li class="skill-item" data-skill="JavaScript">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+              </li>
+              <li class="skill-item" data-skill="React">
+                <span class="skill-name">React</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <ul class="skill-list">
+              <li class="skill-item" data-skill="Ruby">
+                <span class="skill-name">Ruby</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+              </li>
+              <li class="skill-item" data-skill="Ruby on Rails">
+                <span class="skill-name">Ruby on Rails</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+              </li>
+              <li class="skill-item" data-skill="Node.js">
+                <span class="skill-name">Node.js</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+              </li>
+              <li class="skill-item" data-skill="SQL">
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Others</h3>
+            <ul class="skill-list">
+              <li class="skill-item" data-skill="Git">
+                <span class="skill-name">Git</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+              </li>
+              <li class="skill-item" data-skill="Figma">
+                <span class="skill-name">Figma</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+              </li>
+              <li class="skill-item" data-skill="Responsive Design">
+                <span class="skill-name">Responsive Design</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+              </li>
+              <li class="skill-item" data-skill="Docker">
+                <span class="skill-name">Docker</span>
+                <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-padding" id="projects">
+        <div class="section-header">
+          <h2 class="section-title">My Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-project="project1">
+            <div class="project-frames" id="project1-frames">
+              <!-- Will be replaced with JS-generated frames -->
+              <img src="/images/projects/ecommerce-project.jpg" alt="BeautyVice E-Commerce Platform" class="project-static-image">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">BeautyVice - E-Commerce Platform</h3>
+              <p class="project-description">A comprehensive beauty products online store with advanced filtering, secure payment processing, user accounts, and inventory management. Featuring a responsive design and intuitive product discovery.</p>
+              <div class="project-tech">
+                <span>Ruby on Rails</span>
+                <span>PostgreSQL</span>
+                <span>JavaScript</span>
+                <span>Stripe API</span>
+              </div>
+              <div class="project-details">
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                  <li>Custom shopping cart and checkout flow</li>
+                  <li>Real-time inventory management</li>
+                  <li>Secure payment processing integration</li>
+                  <li>Responsive design for all devices</li>
+                  <li>Product review and rating system</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Demo</a>
+                <a href="#" class="project-link">View Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="project2">
+            <div class="project-frames" id="project2-frames">
+              <!-- Will be replaced with JS-generated frames -->
+              <img src="/images/projects/portfolio-project.jpg" alt="Professional Portfolio Website" class="project-static-image">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Creative Developer Portfolio</h3>
+              <p class="project-description">A modern portfolio website with eye-catching animations and interactive elements. Designed to showcase my skills and projects with a unique visual style and engaging user experience.</p>
+              <div class="project-tech">
+                <span>HTML5/CSS3</span>
+                <span>JavaScript</span>
+                <span>Ruby</span>
+                <span>Sinatra</span>
+              </div>
+              <div class="project-details">
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                  <li>Custom-coded stop motion animations</li>
+                  <li>Responsive layout for all screen sizes</li>
+                  <li>Interactive skills visualization</li>
+                  <li>Dynamic project showcases</li>
+                  <li>Modern, minimalist design</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Project</a>
+                <a href="#" class="project-link">View Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="project3">
+            <div class="project-frames" id="project3-frames">
+              <!-- Will be replaced with JS-generated frames -->
+              <img src="/images/projects/task-manager.jpg" alt="Task Management Application" class="project-static-image">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Collaborate - Task Management App</h3>
+              <p class="project-description">A collaborative task management platform for remote teams with real-time updates, team communication, and productivity tracking features. Designed to streamline workflow and boost team efficiency.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Ruby on Rails</span>
+                <span>WebSockets</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-details">
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                  <li>Real-time task updates and notifications</li>
+                  <li>Drag-and-drop Kanban board interface</li>
+                  <li>Team chat and commenting system</li>
+                  <li>Time tracking and productivity analytics</li>
+                  <li>Role-based permissions and task assignment</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Demo</a>
+                <a href="#" class="project-link">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-padding" id="contact">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <p>I'm currently available for freelance work and exciting opportunities. Feel free to reach out if you'd like to collaborate!</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">✉️</div>
+                <a href="mailto:hello@mavandre.dev">hello@mavandre.dev</a>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">🔗</div>
+                <a href="https://linkedin.com/in/mavandre" target="_blank">linkedin.com/in/mavandre</a>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">💻</div>
+                <a href="https://github.com/mavandre" target="_blank">github.com/mavandre</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">MAVANDRE.</div>
+        <div class="social-links">
+          <a href="#" class="social-link">Github</a>
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+        <div class="copyright">
+          &copy; 2025 Mavandre. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="/js/main.js"></script>
+  <script src="/js/animations.js"></script>
+</body>
+</html>
